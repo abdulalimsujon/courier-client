@@ -17,7 +17,7 @@ const Header = () => {
 
   return (
     <header className="fixed top-0 left-0 w-full bg-gray-100 shadow-md z-50">
-      <div className="lg:w-[1440px] lg:h-[90px] mx-auto flex justify-between items-center px-6 lg:px-[120px] py-4 lg:py-[15px]">
+      <div className="slg:w-[1440px] lg:h-[90px] mx-auto flex justify-between items-center px-6 lg:px-[120px] py-4 lg:py-[15px]">
         {/* Logo */}
         <div className="w-[112px] h-[60px] flex-shrink-0">
           <Image src="/images/logo.svg" width={112} height={60} alt="Logo" />

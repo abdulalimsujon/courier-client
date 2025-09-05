@@ -13,7 +13,7 @@ const navLinks = [
 const Footer = () => {
   return (
     <div className="w-full bg-white">
-      <div className="max-w-[1440px] mx-auto px-6 md:px-12 lg:px-[120px] py-[80px] grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-[24px]">
+      <div className="max-w-[1200px] mx-auto px-6 md:px-12 lg:px-[120px] py-[80px] grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-[24px]">
         {/* first */}
         <div className="flex flex-col gap-4">
           <div className="h-[60px] flex items-center justify-start relative">
