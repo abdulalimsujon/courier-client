@@ -30,7 +30,7 @@ const HeroSection = () => {
   return (
     <section className="relative w-full mt-[90px]">
       {/* Hero Top */}
-      <div className="max-w-[1200px] w-full mx-auto flex flex-col lg:flex-row items-center gap-10   py-12 lg:py-20">
+      <div className="max-w-[1200px] w-full mx-auto flex flex-col lg:flex-row items-center gap-10   lg:py-20">
         {/* Left Text */}
         <div className="flex flex-col gap-10 max-w-[588px]">
           <div className="space-y-2">
