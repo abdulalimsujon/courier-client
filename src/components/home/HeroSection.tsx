@@ -30,7 +30,7 @@ const HeroSection = () => {
   return (
     <section className="relative w-full mt-[90px]">
       {/* Hero Top */}
-      <div className="max-w-[1440px] w-full mx-auto flex flex-col lg:flex-row items-center gap-10 px-6 py-12 lg:py-20">
+      <div className="max-w-[1200px] w-full mx-auto flex flex-col lg:flex-row items-center gap-10   py-12 lg:py-20">
         {/* Left Text */}
         <div className="flex flex-col gap-10 max-w-[588px]">
           <div className="space-y-2">
@@ -68,11 +68,35 @@ const HeroSection = () => {
       </div>
 
       {/* Info Cards */}
-      <div className="max-w-[1440px] mx-auto grid gap-6 lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-1 px-6 pb-12 -translate-y-20">
-        <InfoCard icon={icon1} title="Multiple Addresses" />
-        <InfoCard icon={icon2} title="Fast Delivery" />
-        <InfoCard icon={icon3} title="Secure Payment" />
-        <InfoCard icon={icon4} title="24/7 Support" />
+      <div className="bg-[#F5F5F5]">
+        <div className="z-[10] max-w-[1200px] mx-auto grid gap-6 lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-1   -translate-y-20">
+          <InfoCard icon={icon1} title="Multiple Addresses" />
+          <InfoCard icon={icon2} title="Fast Delivery" />
+          <InfoCard icon={icon3} title="Secure Payment" />
+          <InfoCard icon={icon4} title="24/7 Support" />
+        </div>
+        <div className="w-full flex justify-center items-center  md:px-0">
+          <div className="flex flex-col md:flex-row w-full max-w-[1200px] bg-[#FFFFFF]  rounded-[12px] p-6 md:p-[24px] gap-4 md:gap-[24px]">
+            {/* Left Text */}
+            <div className="my-auto w-full md:w-[426px] h-[32px] flex items-center justify-center">
+              <p className="font-['DM_Sans'] font-bold text-[20px] leading-[160%] tracking-[0%] text-center w-full">
+                Track your parcel to get detailed update
+              </p>
+            </div>
+
+            {/* Input + Button */}
+            <div className="w-full md:w-[702px] flex flex-col md:flex-row gap-4 md:gap-0">
+              <input
+                type="text"
+                placeholder="Enter tracking Id"
+                className="w-full md:w-[526px] h-[64px] pt-[16px] pr-[20px] pb-[16px] pl-[20px] rounded-tl-[8px] rounded-bl-[8px] border-t border-b"
+              />
+              <button className="w-full md:w-[176px] h-[64px] pt-[18px] pr-[16px] pb-[18px] pl-[16px] rounded-tr-[8px] rounded-br-[8px] bg-[#EF6820] text-white">
+                Track parcel
+              </button>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   );
