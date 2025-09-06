@@ -14,7 +14,7 @@ const SectionHeading: React.FC<SectionHeadingProps> = ({
   textSize = "text-[32px]",
 }) => {
   return (
-    <div className={`w-full ${bgColor} ${className}`}>
+    <div className={`w-full ${bgColor} ${className} my-10`}>
       <h1
         className={`w-full text-center font-['Plus_Jakarta_Sans'] font-bold ${textSize}`}
       >
