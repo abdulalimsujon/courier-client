@@ -17,8 +17,8 @@ const SectionHeading: React.FC<SectionHeadingProps> = ({
   description = "",
 }) => {
   return (
-    <div className={`w-full ${bgColor} ${className}`}>
-      <Container>
+    <div className={`w-full max-w-[997px] ${bgColor} ${className}`}>
+      <div>
         <h1
           className={`w-full text-center font-['Plus_Jakarta_Sans'] font-bold ${textSize}`}
         >
@@ -29,7 +29,7 @@ const SectionHeading: React.FC<SectionHeadingProps> = ({
             {description}
           </p>
         )}
-      </Container>
+      </div>
     </div>
   );
 };

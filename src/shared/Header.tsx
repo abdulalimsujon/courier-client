@@ -16,7 +16,7 @@ const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="fixed top-0 left-0 w-full bg-gray-100 shadow-md z-50">
+    <header className="fixed top-0 left-0 w-full bg-gray-100 shadow-md z-50 ">
       <div className="lg:w-[1200px] lg:h-[90px] mx-auto flex justify-between items-center   py-4 lg:py-[15px] ">
         {/* Logo */}
         <div className="w-[112px] h-[60px] flex-shrink-0">
