@@ -8,7 +8,7 @@ import {
 } from "@/components/ui/accordion";
 import React from "react";
 
-const AboutUs = () => {
+const FrequentlyAsked = () => {
   return (
     <div>
       <Container>
@@ -52,4 +52,4 @@ const AboutUs = () => {
   );
 };
 
-export default AboutUs;
+export default FrequentlyAsked;
