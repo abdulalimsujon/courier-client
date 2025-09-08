@@ -1,6 +1,7 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 "use client";
 
-import React, { useRef, useEffect } from "react";
+import React, { useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Navigation } from "swiper/modules";
 import profile from "../../assets/Home/profile.png";
@@ -58,13 +59,13 @@ const DynamicSwiper: React.FC = () => {
       {/* Custom navigation buttons */}
       <button
         ref={prevRef}
-        className="absolute  bg-gray-200 left-[-50px] top-1/2 transform -translate-y-1/2  w-[40px] h-[40px] rounded-full flex items-center justify-center z-10 text-white"
+        className="absolute bg-gray-200 left-[-50px] top-1/2 transform -translate-y-1/2 w-[40px] h-[40px] rounded-full flex items-center justify-center z-10 text-white"
       >
         <FaAngleLeft />
       </button>
       <button
         ref={nextRef}
-        className="absolute bg-gray-200 right-[-50px] top-1/2 transform -translate-y-1/2 w-[40px] h-[40px] rounded-full flex items-center justify-center z-10 text-white rotate-180"
+        className="absolute bg-gray-200 right-[-50px] top-1/2 transform -translate-y-1/2 w-[40px] h-[40px] rounded-full flex items-center justify-center z-10 text-white"
       >
         <FaAngleRight />
       </button>
@@ -78,12 +79,17 @@ const DynamicSwiper: React.FC = () => {
           1024: { slidesPerView: 3, spaceBetween: 30 },
         }}
         pagination={{ clickable: true, type: "fraction" }}
-        navigation={{
-          prevEl: prevRef.current,
-          nextEl: nextRef.current,
-        }}
+        navigation={
+          {
+            prevEl: prevRef.current,
+            nextEl: nextRef.current,
+          } as any
+        } // type cast fixes TS error
         onBeforeInit={(swiper) => {
-          if (swiper.params.navigation) {
+          if (
+            swiper.params.navigation &&
+            typeof swiper.params.navigation !== "boolean"
+          ) {
             swiper.params.navigation.prevEl = prevRef.current;
             swiper.params.navigation.nextEl = nextRef.current;
           }

@@ -98,13 +98,11 @@ const HowItWorks = () => {
   return (
     <div>
       <Container>
-        <SectionHeading title="How it Works ?" />
-        <Container>
-          <p className="font-dm-sans font-normal text-[18px] leading-[160%] text-center">
-            A simple, reliable process for all your delivery needs. Follow these
-            easy steps to get your package delivered safely and on time.
-          </p>
-        </Container>
+        <SectionHeading
+          title="How it Works "
+          description="A simple, reliable process for all your delivery needs. Follow these
+            easy steps to get your package delivered safely and on time."
+        />
 
         {/* Steps */}
         <StepCard

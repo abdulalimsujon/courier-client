@@ -1,4 +1,5 @@
 import React from "react";
+import Container from "./Container";
 
 interface SectionHeadingProps {
   title: string;
@@ -17,16 +18,18 @@ const SectionHeading: React.FC<SectionHeadingProps> = ({
 }) => {
   return (
     <div className={`w-full ${bgColor} ${className}`}>
-      <h1
-        className={`w-full text-center font-['Plus_Jakarta_Sans'] font-bold ${textSize}`}
-      >
-        {title}
-      </h1>
-      {description && (
-        <p className="w-full font-dm-sans font-normal not-italic text-[18px] text-center mt-2">
-          {description}
-        </p>
-      )}
+      <Container>
+        <h1
+          className={`w-full text-center font-['Plus_Jakarta_Sans'] font-bold ${textSize}`}
+        >
+          {title}
+        </h1>
+        {description && (
+          <p className="w-full font-dm-sans font-normal not-italic text-[18px] text-center mt-2">
+            {description}
+          </p>
+        )}
+      </Container>
     </div>
   );
 };
