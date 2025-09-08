@@ -28,30 +28,32 @@ const InfoCard = ({
 
 const HeroSection = () => {
   return (
-    <section className="relative w-full mt-[90px]">
+    <section className="relative w-full mt-[90px] mx-auto ">
       {/* Hero Top */}
       <div className="max-w-[1200px] w-full mx-auto flex flex-col lg:flex-row items-center gap-10   lg:py-20">
         {/* Left Text */}
-        <div className="flex flex-col gap-10 max-w-[588px]">
-          <div className="space-y-2">
-            <h1 className="font-plus-jakarta-sans font-bold text-[40px] md:text-[56px] leading-tight">
-              Fast & Reliable
-            </h1>
-            <h1 className="font-plus-jakarta-sans font-bold text-[40px] md:text-[56px] leading-tight text-white">
-              Courier Service
-            </h1>
-          </div>
-          <p className="text-white font-dm-sans text-[16px] md:text-[18px]">
-            Safe, fast, and reliable deliveries—our platform connects you to the
-            fastest routes and top-tier couriers.
-          </p>
-          <div className="flex flex-wrap gap-4">
-            <button className="bg-[#EF6820] text-white px-8 py-3 rounded-[8px] text-[16px] md:text-[18px]">
-              Get Started
-            </button>
-            <button className="px-8 py-3 rounded-[8px] border border-[#EF6820] text-[16px] md:text-[18px]">
-              Learn More
-            </button>
+        <div className="flex justify-center items-center  flex-col gap-10 max-w-[588px] ">
+          <div className="p-2 ">
+            <div className="space-y-2">
+              <h1 className="font-plus-jakarta-sans font-bold text-[40px] md:text-[56px] leading-tight">
+                Fast & Reliable
+              </h1>
+              <h1 className="font-plus-jakarta-sans font-bold text-[40px] md:text-[56px] leading-tight text-white">
+                Courier Service
+              </h1>
+            </div>
+            <p className="text-white font-dm-sans text-[16px] md:text-[18px]">
+              Safe, fast, and reliable deliveries—our platform connects you to
+              the fastest routes and top-tier couriers.
+            </p>
+            <div className="flex flex-wrap gap-4">
+              <button className="bg-[#EF6820] text-white px-8 py-3 rounded-[8px] text-[16px] md:text-[18px]">
+                Get Started
+              </button>
+              <button className="px-8 py-3 rounded-[8px] border border-[#EF6820] text-[16px] md:text-[18px]">
+                Learn More
+              </button>
+            </div>
           </div>
         </div>
 

@@ -76,7 +76,7 @@ const page = () => {
                   placeholder="Email address"
                 />
               </div>
-              <div className="py-6 border-[#B2DDFF]">
+              <div>
                 <label className="block text-sm font-medium text-gray-700">
                   Password
                 </label>
@@ -86,13 +86,13 @@ const page = () => {
                   placeholder="Password"
                 />
               </div>
-              <div className="py-6 border-[#B2DDFF]">
+              <div>
                 <label className="block text-sm font-medium text-gray-700">
                   Confirm Password
                 </label>
                 <input
                   type="password"
-                  className="mt-1 block w-full border-[#B2DDFF] rounded-md  p-2"
+                  className="mt-1 block w-full border-gray-300 rounded-md shadow-sm p-2"
                   placeholder="Confirm Password"
                 />
               </div>
