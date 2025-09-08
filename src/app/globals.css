@@ -112,6 +112,36 @@
   --sidebar-ring: oklch(0.551 0.027 264.364);
 }
 
+/* styles/globals.css or a module CSS file */
+.mySwiper .mySwiper-prev,
+.mySwiper .mySwiper-next {
+  width: 40px;
+  height: 40px;
+  padding: 8px;
+  border-radius: 20px;
+  opacity: 1;
+  position: absolute;
+  top: 399px; /* same top for both */
+  z-index: 10;
+  background: #ef6820; /* your orange */
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Left button */
+.mySwiper .mySwiper-prev {
+  /* left: 64px;
+  transform: rotate(0deg); */
+}
+
+/* Right button */
+.mySwiper .mySwiper-next {
+  /* left: 1336px;
+  transform: rotate(180deg); */
+}
+
 @layer base {
   * {
     @apply border-border outline-ring/50;

@@ -1,5 +1,6 @@
 import AboutUs from "@/components/home/AboutUs";
 import AskedQuestion from "@/components/home/AskedQuestion";
+import CustomerSay from "@/components/home/CustomerSay";
 import HeroSection from "@/components/home/HeroSection";
 import HowItWorks from "@/components/home/HowItWorks";
 
@@ -12,6 +13,7 @@ export default function Home() {
       <AskedQuestion />
       <AboutUs></AboutUs>
       <HowItWorks />
+      <CustomerSay />
     </div>
   );
 }

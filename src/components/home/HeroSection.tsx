@@ -15,7 +15,7 @@ const InfoCard = ({
   title: string;
 }) => {
   return (
-    <div className="w-full max-w-[282px] h-auto rounded-[16px] flex justify-center items-center bg-[#FFFFFFBF] p-6">
+    <div className="w-full md:mx-auto lg:max-w-[282px] h-auto rounded-[16px] flex justify-center items-center bg-[#FFFFFFBF] p-6">
       <div className="flex flex-col gap-6 items-center text-center">
         <Image src={icon} height={56} width={56} alt={title} />
         <p className="font-['Open_Sans'] font-semibold text-[20px] leading-[22px]">

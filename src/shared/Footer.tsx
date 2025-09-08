@@ -12,7 +12,7 @@ const navLinks = [
 
 const Footer = () => {
   return (
-    <div className="w-full bg-white">
+    <div className="w-full shadow-2xl">
       <div className="max-w-[1200px] mx-auto px-6 md:px-12 lg:px-[120px] py-[80px] grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-[24px]">
         {/* first */}
         <div className="flex flex-col gap-4">
