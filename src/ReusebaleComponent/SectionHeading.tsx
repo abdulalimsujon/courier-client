@@ -17,7 +17,7 @@ const SectionHeading: React.FC<SectionHeadingProps> = ({
   description = "",
 }) => {
   return (
-    <div className={`w-full max-w-[997px] ${bgColor} ${className}`}>
+    <div className={`w-full max-w-[997px] ${bgColor} ${className} my-16`}>
       <div>
         <h1
           className={`w-full text-center font-['Plus_Jakarta_Sans'] font-bold ${textSize}`}

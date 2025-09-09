@@ -5,11 +5,12 @@ import React from "react";
 const OurHistory = () => {
   return (
     <div className="hidden lg:block">
-      <SectionHeading
-        title="Our History"
-        description="We started as a small, local delivery service in Brisbane with one goal: to make deliveries fast, reliable, and affordable for everyone in the city. Over the years, we’ve expanded our reach, refined our services, and built lasting relationships with businesses and residents across Brisbane."
-      ></SectionHeading>
       <Container>
+        <SectionHeading
+          title="Our History"
+          description="We started as a small, local delivery service in Brisbane with one goal: to make deliveries fast, reliable, and affordable for everyone in the city. Over the years, we’ve expanded our reach, refined our services, and built lasting relationships with businesses and residents across Brisbane."
+        ></SectionHeading>
+
         <div className="w-full flex ">
           {/* first part */}
           {/* <div className=""></div> */}
