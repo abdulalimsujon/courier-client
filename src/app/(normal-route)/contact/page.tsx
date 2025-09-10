@@ -1,6 +1,6 @@
 import GetStartedBanner from "@/components/home/GetStartedBanner";
 import Hero from "@/ReusebaleComponent/Hero";
-import bg from "../../assets/aboutimage/image.png";
+import bg from "../../../assets/aboutimage/image.png";
 import GetInTouch from "@/components/contact/GetInTauch";
 
 const page = () => {

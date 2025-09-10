@@ -3,7 +3,7 @@ import CustomerSay from "@/components/home/CustomerSay";
 import GetStartedBanner from "@/components/home/GetStartedBanner";
 import Hero from "@/ReusebaleComponent/Hero";
 import React from "react";
-import bg from "../../assets/aboutimage/image.png";
+import bg from "../../../assets/aboutimage/image.png";
 import OurHistory from "@/components/about/OurHistory";
 
 const About = () => {

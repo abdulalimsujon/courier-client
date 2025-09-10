@@ -21,10 +21,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${dmSans.className} antialiased`}>
-        <Header/>
+      <body className={`${dmSans.className} antialiased bg-[#5C5C5C0D]`}>
+        {/* <Header /> */}
         {children}
-        <Footer/>
+        {/* <Footer /> */}
       </body>
     </html>
   );
