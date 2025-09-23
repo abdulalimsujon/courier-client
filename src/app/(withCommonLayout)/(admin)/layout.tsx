@@ -1,4 +1,5 @@
 import AdminHeader from "@/shared/AdminHeader";
+import Footer from "@/shared/Footer";
 import React, { ReactNode } from "react";
 
 const layout = ({ children }: { children: ReactNode }) => {
@@ -6,6 +7,7 @@ const layout = ({ children }: { children: ReactNode }) => {
     <div>
       <AdminHeader />
       {children}
+      <Footer />
     </div>
   );
 };

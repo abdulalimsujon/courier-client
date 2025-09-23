@@ -5,7 +5,8 @@ interface SectionHeadingProps {
   title: string;
   className?: string;
   bgColor?: string; // e.g., "bg-gray-100"
-  textSize?: string; // e.g., "text-3xl"
+  textSize?: string;
+  textColor?: string; // e.g., "text-3xl"
   description?: string;
 }
 
@@ -15,9 +16,12 @@ const SectionHeading: React.FC<SectionHeadingProps> = ({
   bgColor = "",
   textSize = "text-[32px]",
   description = "",
+  textColor = "",
 }) => {
   return (
-    <div className={`w-full max-w-[997px] ${bgColor} ${className} my-16`}>
+    <div
+      className={`w-full max-w-[997px] ${bgColor} ${className} ${textColor} my-16`}
+    >
       <div>
         <h1
           className={`w-full text-center font-['Plus_Jakarta_Sans'] font-bold ${textSize}`}
