@@ -101,14 +101,14 @@ const MobileMenu = () => {
             Order & Delivery
           </Link>
           <Link
-            href="/delivery"
+            href="/customers"
             className={`px-4 py-2 hover:bg-gray-100 transition-colors duration-200 ${
-              pathname === "/delivery"
+              pathname === "/customers"
                 ? "underline underline-offset-4 decoration-2"
                 : ""
             }`}
           >
-            Delivery Management
+            Customers
           </Link>
           <Link
             href="/delivery"
@@ -140,7 +140,7 @@ const MerchantHeader = () => {
         {/* Middle Nav (hidden on mobile, visible on lg) */}
         <div className="hidden lg:flex max-w-[504px] gap-[24px] font-dm-sans font-normal text-[20px] items-center">
           <Link
-            href="/"
+            href="/admin"
             className={`hover:underline hover:underline-offset-4 hover:decoration-2 transition-all duration-200 ${
               pathname === "/"
                 ? "underline underline-offset-4 decoration-2"
@@ -167,7 +167,7 @@ const MerchantHeader = () => {
                 : ""
             }`}
           >
-            Delivery Management
+            Customer
           </Link>
           {/* <Link
             href="/logout"

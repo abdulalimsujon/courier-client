@@ -1,5 +1,4 @@
 import React from "react";
-import Container from "./Container";
 
 interface SectionHeadingProps {
   title: string;
@@ -12,7 +11,6 @@ interface SectionHeadingProps {
 
 const SectionHeading: React.FC<SectionHeadingProps> = ({
   title,
-  className = "",
   bgColor = "",
   textSize = "text-[32px]",
   description = "",
@@ -20,7 +18,7 @@ const SectionHeading: React.FC<SectionHeadingProps> = ({
 }) => {
   return (
     <div
-      className={`w-full max-w-[997px] ${bgColor} ${className} ${textColor} my-16`}
+      className={`w-full max-w-[997px] bg-[${bgColor}]  text-[${textColor}] my-16`}
     >
       <div>
         <h1

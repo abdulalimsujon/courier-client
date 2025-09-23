@@ -160,14 +160,14 @@ const AdminHeader = () => {
             Order & Delivery
           </Link>
           <Link
-            href="/delivery"
+            href="/rider"
             className={`hover:underline hover:underline-offset-4 hover:decoration-2 transition-all duration-200 ${
               pathname === "/delivery"
                 ? "underline underline-offset-4 decoration-2"
                 : ""
             }`}
           >
-            Delivery Management
+            Rider Management
           </Link>
           {/* <Link
             href="/logout"
