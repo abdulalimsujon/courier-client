@@ -5,7 +5,6 @@ import { HiOutlineDotsVertical } from "react-icons/hi";
 import {
   Table,
   TableBody,
-  TableCaption,
   TableCell,
   TableHead,
   TableHeader,

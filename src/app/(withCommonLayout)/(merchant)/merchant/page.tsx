@@ -1,9 +1,12 @@
+import OrderHistory from "@/components/merchant/OrderHistory";
+import ParcelOverview from "@/components/merchant/ParcelOverview";
 import React from "react";
 
 const page = () => {
   return (
-    <div className="w-[500px] h-screen bg-amber-500">
-      <h1>merchsadfjlk</h1>
+    <div className="">
+      <ParcelOverview />
+      <OrderHistory />
     </div>
   );
 };

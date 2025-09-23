@@ -140,7 +140,7 @@ const MerchantHeader = () => {
         {/* Middle Nav (hidden on mobile, visible on lg) */}
         <div className="hidden lg:flex max-w-[504px] gap-[24px] font-dm-sans font-normal text-[20px] items-center">
           <Link
-            href="/admin"
+            href="/merchant"
             className={`hover:underline hover:underline-offset-4 hover:decoration-2 transition-all duration-200 ${
               pathname === "/"
                 ? "underline underline-offset-4 decoration-2"
