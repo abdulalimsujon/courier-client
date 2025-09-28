@@ -81,7 +81,7 @@ const MobileMenu = () => {
       {open && (
         <div className="absolute right-0 top-full mt-2 w-[180px] bg-white shadow-lg rounded-lg border border-gray-200 py-2 z-50 flex flex-col gap-2">
           <Link
-            href="/"
+            href="/merchant"
             className={`px-4 py-2 hover:bg-gray-100 transition-colors duration-200 ${
               pathname === "/"
                 ? "underline underline-offset-4 decoration-2"
@@ -91,7 +91,7 @@ const MobileMenu = () => {
             Dashboard
           </Link>
           <Link
-            href="/orders"
+            href="/merchant/orders"
             className={`px-4 py-2 hover:bg-gray-100 transition-colors duration-200 ${
               pathname === "/orders"
                 ? "underline underline-offset-4 decoration-2"
@@ -101,7 +101,7 @@ const MobileMenu = () => {
             Order & Delivery
           </Link>
           <Link
-            href="/customers"
+            href="/merchant/customers"
             className={`px-4 py-2 hover:bg-gray-100 transition-colors duration-200 ${
               pathname === "/customers"
                 ? "underline underline-offset-4 decoration-2"
@@ -150,7 +150,7 @@ const MerchantHeader = () => {
             Dashboard
           </Link>
           <Link
-            href="/orders"
+            href="/merchant/orders"
             className={`hover:underline hover:underline-offset-4 hover:decoration-2 transition-all duration-200 ${
               pathname === "/orders"
                 ? "underline underline-offset-4 decoration-2"
@@ -160,7 +160,7 @@ const MerchantHeader = () => {
             Order & Delivery
           </Link>
           <Link
-            href="/delivery"
+            href="/merchant/customers"
             className={`hover:underline hover:underline-offset-4 hover:decoration-2 transition-all duration-200 ${
               pathname === "/delivery"
                 ? "underline underline-offset-4 decoration-2"

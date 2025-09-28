@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
 import "./globals.css";
-
 import { DM_Sans } from "next/font/google";
+import HeaderWrapper from "@/shared/HeaderWrapper";
 
 const dmSans = DM_Sans({
   subsets: ["latin"],
-  weight: ["400", "500", "700"], // add the weights you need
+  weight: ["400", "500", "700"],
 });
 
 export const metadata: Metadata = {
@@ -14,15 +14,14 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
     <html lang="en">
       <body className={`${dmSans.className} antialiased bg-[#5C5C5C0D]`}>
-        {/* <Header /> */}
+        <HeaderWrapper /> {/* Client component handles logic */}
         {children}
-        {/* <Footer /> */}
       </body>
     </html>
   );
