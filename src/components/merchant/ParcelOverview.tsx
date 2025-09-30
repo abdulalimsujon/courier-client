@@ -35,15 +35,6 @@ const ParcelOverview = () => {
           <InfoCard key={index} number={item.number} label={item.label} />
         ))}
       </div>
-      <div className="w-full flex gap-4 mt-4 ">
-        <div className="bg-[#FDFDFD80] flex justify-center items-center w-[588px] h-[123px] rounded-[16px] pt-[20px] pr-[32px] pb-[20px] pl-[32px] gap-[4px] rotate-0 opacity-100 border border-[1px]">
-          <p>Add Parcel</p>
-        </div>
-
-        <div className="bg-[#FDFDFD80] flex justify-center items-center w-[588px] h-[123px] rounded-[16px] pt-[20px] pr-[32px] pb-[20px] pl-[32px] gap-[4px] rotate-0 opacity-100 border border-[1px]">
-          <p>Support</p>
-        </div>
-      </div>
     </Container>
   );
 };

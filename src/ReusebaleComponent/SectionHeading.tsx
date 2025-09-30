@@ -18,7 +18,7 @@ const SectionHeading: React.FC<SectionHeadingProps> = ({
 }) => {
   return (
     <div
-      className={`w-full max-w-[997px] bg-[${bgColor}]  text-[${textColor}] my-16`}
+      className={`w-full max-w-[997px] lg:w-[997px] bg-[${bgColor}]  text-[${textColor}] my-16`}
     >
       <div>
         <h1
