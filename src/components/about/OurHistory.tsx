@@ -19,7 +19,7 @@ const OurHistory = () => {
               {/* first */}
               <div className="">
                 <h1 className="font-plus-jakarta-sans font-bold text-[32px] leading-[36px] text-center text-[#EF6820]">
-                  2015
+                  201১
                 </h1>
               </div>
               {/* second */}
